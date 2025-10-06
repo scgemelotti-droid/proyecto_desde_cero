@@ -15,21 +15,25 @@ body {
     background-color: rgb(13, 173, 179);
     color: aqua;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 10
 }
 
 .header{
-    background-color: blue;
+    background-color: #0077b6;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 3rem;
 }
 
 .header_logo {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 600;
     padding: 1rem;
     margin-left: 2rem;
+    color: #fff;
+    text-decoration: none;
 }
 
 .header_logo a{
@@ -57,11 +61,19 @@ header nav{
 }
 
 .header_nav a {
-    color:  yellow;
+    color:  #ffdd57;
     text-decoration: none ;
     display: inline-block;
     padding: 1rem;
+    transition: color 0.3;
 }
+
+
+.header_nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 
 .footer{ 
     background-color: rgb(255, 0, 170);
