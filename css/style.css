@@ -19,7 +19,7 @@ body {
 }
 
 .header{
-    background-color: yellow;
+    background-color: #0077b6;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -94,6 +94,12 @@ main .parrafo-home {
     width: 80%;
 }
 
+.productos-home :hover {
+    background-color: yellow;       /* amarillo al pasar el mouse */
+    transform: scale(1.03);          /* se agranda un poquito */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
 .productos-home {
     color: #ffdd57;
     text-align: center;
@@ -138,6 +144,12 @@ main .parrafo-home {
     font-size: 2.5rem;
 }
 
+.tarjeta-producto:hover {
+  background-color: yellow;       /* amarillo al pasar el mouse */
+  transform: scale(1.03);          /* se agranda un poquito */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+
+}
 .tarjeta-producto p {
     font-size: 2rem;
     font-weight: bold;
@@ -222,6 +234,7 @@ main .parrafo-home {
 
 .box {
     background: white;
+    color: black;
     border-radius: 12px;
     padding: 20px;
     margin: 20px auto;
@@ -268,6 +281,7 @@ main .parrafo-home {
 
 /* ===== SECCIÓN RESEÑAS ENCERRADA ===== */
 .reseñas {
+    background-color: yellow; 
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -299,6 +313,7 @@ main .parrafo-home {
 }
 
 .card h3 {
+    
     margin-top: 5px;
     font-size: 0.95rem;
     color: #333;
