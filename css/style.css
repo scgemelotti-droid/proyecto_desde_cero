@@ -515,3 +515,123 @@ h2 {
   color: black;
   transform: scale(1.1);        /* efecto de agrandarse al pasar el mouse */
 }
+
+
+/* === 🔹 HACER EL SITIO RESPONSIVE === */
+
+/* Contenedor de las tarjetas */
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;           /* permite que bajen si no hay espacio */
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+/* Cada tarjeta más flexible */
+.tarjeta-producto {
+  flex: 1 1 280px;           /* se adapta al espacio disponible */
+  max-width: 300px;
+}
+
+/* Las reseñas también se adaptan */
+.reseñas {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Ajustes generales para pantallas medianas */
+@media (max-width: 1000px) {
+  main {
+    font-size: 2rem;
+    width: 95%;
+  }
+
+  .header {
+    flex-direction: row;  /* menú debajo del logo */
+    align-items: center;
+    text-align: center;
+  }
+
+  .header_nav ul {
+    flex-direction: row;     /* menú horizontal */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .box {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .imagen-destacada img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2, .h2-experiencia {
+    font-size: 2rem;
+  }
+
+  .tarjeta-producto {
+    max-width: 90%;
+  }
+
+  .reseñas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+
+  .contacto {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+.productos-estrella {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espacio entre elementos */
+}
+
+
+/* 🔹 PRODUCTOS ESTRELLA - versión celular */
+@media (max-width: 780px) {
+  .contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;   /* 👉 apila las tarjetas una debajo de otra */
+    align-items: center;      /* las centra horizontalmente */
+    gap: 1.5rem;              /* separa un poco entre cada una */
+  }
+
+  .tarjeta-producto {
+    width: 50;               /* ocupa casi todo el ancho del celu */
+    max-width: 350px;         /* evita que sean muy grandes */
+  }
+
+  .productos-estrella h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+
+  .productos-estrella {
+    flex-direction: column; /* ahora se apilan */
+    align-items: center; /* opcional: las centra */
+}
+
